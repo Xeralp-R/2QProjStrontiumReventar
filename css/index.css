@@ -1,8 +1,6 @@
 :root {
     --nav-bg-col: #333333;
     --nav-text-col: #ffffff;
-    --nav-selected-bg-col: #7e2811;
-    --nav-selected-text-col: #ffffff;
 
     --header-bg-col: #000000cc;
     --header-text-col: #ffffff;
@@ -72,32 +70,17 @@ nav > ul > li {
     /*letter-spacing: 2px;*/
     /*line-height: -5px;*/
 
-    animation-name: nav-deselect;
-    animation-duration: 500ms;
+    transition: background-color 500ms, color 500ms;
 }
 
-nav > ul > li:hover {
-    background-color: var(--nav-selected-bg-col);
-    animation-name: nav-select;
-    animation-duration: 500ms;
+#link_index:hover {
+    background-color: #7e2811;
+    color: #ffffff;
 }
 
-@keyframes nav-select {
-    from {
-        background-color: var(--nav-bg-col);
-    }
-    to {
-        background-color: var(--nav-selected-bg-col);
-    }
-}
-
-@keyframes nav-deselect {
-    from {
-        background-color: var(--nav-selected-bg-col);
-    }
-    to {
-        background-color: var(--nav-bg-col);
-    }
+#link_pathetique:hover {
+    background-color: #d4af37;
+    color: #000000;
 }
 
 a {
