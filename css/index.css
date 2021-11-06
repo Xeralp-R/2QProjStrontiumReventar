@@ -7,11 +7,13 @@
     --header-bg-col: #000000cc;
     --header-text-col: #ffffff;
 
-    --main-bg-col: #ffffff; /*fffdd1ee*/
+    --main-bg-col: #ffffff; /*fffdd1ee, if necessary*/
     --main-tex-col: #000000;
 
     --footer-bg-col: #7e2811;
 }
+
+/* Overarching Design */
 
 body {
     display: flex;
@@ -22,6 +24,8 @@ body {
     padding: 0;
     margin: 0;
 }
+
+/* Navigation, including animations */
 
 nav {
     box-sizing: border-box;
@@ -101,6 +105,8 @@ a {
     text-decoration: underline;
 }
 
+/* Header box */
+
 header {
     box-sizing: border-box;
 
@@ -151,6 +157,8 @@ h2 {
     margin-bottom: -5px;
 }
 
+/* Actual text */
+
 h3 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 24px; 
@@ -177,6 +185,8 @@ figure {
 figure img {
     max-width: 600px
 }
+
+/* Footers and stuff */
 
 footer {
     box-sizing: border-box;
