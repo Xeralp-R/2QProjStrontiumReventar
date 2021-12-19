@@ -89,6 +89,11 @@ nav > ul > li {
     color: #ffffff;
 }
 
+#link_funeral:hover {
+    background-color: #615a5f;
+    color: #ffffff;
+}
+
 a {
     color: inherit;
     text-decoration: underline;
