@@ -27,6 +27,26 @@ nav {
     z-index: 10;
 }
 
+nav > button {
+    /* Display: none doesn't work, so I'm using a workaround. */
+    opacity: 0;
+
+    position: absolute;
+    right: 1vw;
+    top: 0;
+    height: 50px;
+    width: 50px;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--nav-text-col);
+    border: none;
+    text-align: center;
+}
+
+nav > button:hover {
+    background-color: var(--nav-hover-col);
+}
+
 nav > ul {
     text-decoration: none;
     list-style: none;
@@ -46,6 +66,7 @@ nav > ul > li {
 
     /* Alignment of text inside */
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -71,6 +92,47 @@ nav > ul > li {
 a {
     color: inherit;
     text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    nav > button {
+        opacity: 1;
+        z-index: 11;
+    }
+
+    nav > ul {
+        position: absolute;
+        top: -30vh;
+        z-index: 10;
+
+        flex-direction: column;
+        height: auto;
+        padding: 0 0 1vh 0;
+
+        background-color: var(--nav-bg-col);
+    }
+
+    nav > ul > li {
+        flex: 1;
+        padding: 1vh;
+    }
+
+    @keyframes hover-in {
+        from {
+            top: -30vh;
+        }
+        to {
+            top: 50px;
+        }
+    }
+    @keyframes hover-out {
+        from {
+            top: 50px;
+        }
+        to {
+            top: -30vh;
+        }
+    }
 }
 
 /* Header box */
@@ -208,7 +270,7 @@ aside > ul > li > a {
     }
 
     aside h4::after {
-        content: " Table of Contents"
+        content: " Table of Contents";
     }
 
     aside > ul > li > a {
@@ -227,6 +289,7 @@ main {
     align-items: center;
     justify-content: center;
 
+    width: 100%;
     padding: 0;
     margin: 0;
     overflow-wrap: break-word;
@@ -263,12 +326,18 @@ section {
     border: 10px;
 }
 
+section ul {
+    width: 100%;
+}
+
 figure {
+    width: 90%;
     max-width: 600px;
     text-align: center;
 }
 
 figure img {
+    width: 100%;
     max-width: 600px;
 }
 
@@ -305,6 +374,12 @@ footer {
 #footer_center > img {
     float: left;
     margin-right: 20px;
+}
+
+@media (max-width: 1000px) {
+    #footer_center > img {
+        float: none;
+    }
 }
 
 #footer_center > address {
