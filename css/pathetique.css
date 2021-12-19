@@ -1,4 +1,6 @@
 :root {
+    --transition-time: 0.5s;
+
     --nav-bg-col: #333333;
     --nav-text-col: #ffffff;
 
@@ -13,9 +15,9 @@
     --aside-hover-col: #bb9928;
     --aside-active-col: #ab8c25;
 
-    --aside-h4-col: #ffffff;
-    --aside-l1-col: #eeeeee;
-    --aside-l2-col: #bcbcbc;
+    --aside-h4-col: #000000;
+    --aside-l1-col: #111111;
+    --aside-l2-col: #222222;
 
     --footer-bg-col: #dcdcdc;
     --footer-fg-col: #000000;
@@ -27,4 +29,8 @@ header {
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;       /* Resize the background image to cover the entire container */
     background-attachment: scroll;
+}
+
+aside a {
+    font-weight: 350;
 }

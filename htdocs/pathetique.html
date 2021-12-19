@@ -43,20 +43,36 @@
             rel="stylesheet"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,350;0,400;0,600;0,700;1,300;1,350;1,400;1,600;1,700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="../css/pathetique.css" />
-        <link rel="stylesheet" href="../css/subpage.css" />
-
-        <!-- that home icon -->
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
+        
+        <link rel="stylesheet" href="../css/pathetique.css" />
+        <link rel="stylesheet" href="../css/subpage.css" />
+        <script
+            type="text/javascript"
+            src="../scripts/subpage.js"
+            defer
+        ></script>
     </head>
     <body>
         <nav>
+            <button
+                class="material-icons"
+                style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+                type="button"
+                id="open_menu"
+            >
+                view_headline
+            </button>
             <ul>
                 <li
                     class="material-icons"
@@ -88,6 +104,49 @@
             </div>
         </header>
         <div id="body-wrapper">
+            <aside>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li>
+                        <a href="#si">Sonata Introduction</a>
+                        <ul>
+                            <li><a href="#si-introtheme">Introductory Theme</a></li>
+                            <li><a href="#si-expansion">Expansion of the Introductory Theme</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#expo">Exposition</a>
+                        <ul>
+                            <li><a href="#expo-t1.1">Theme 1.1</a></li>
+                            <li><a href="#expo-conp">Connecting Passage</a></li>
+                            <li><a href="#expo-t2.1">Theme 2.1</a></li>
+                            <li><a href="#expo-t2.2">Theme 2.2</a></li>
+                            <li><a href="#expo-cadt">Cadential Theme</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#dev">Development</a>
+                        <ul>
+                            <li><a href="#dev-resi">Restatement of the Introduction</a></li>
+                            <li><a href="#dev-alter">Alternation of Theme 1 and Introductory Theme</a></li>
+                            <li><a href="#dev-restat">Restatement of Theme 1.1 in Bass</a></li>
+                            <li><a href="#dev-domped">Dominant Pedal</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#recc">Recapitulation and Coda</a>
+                        <ul>
+                            <li><a href="#recc-t1.1">Restatement of Theme 1.1</a></li>
+                            <li><a href="#recc-t2.1">Restatement of Theme 2.1</a></li>
+                            <li><a href="#recc-t2.2">Restatement of Theme 2.2</a></li>
+                            <li><a href="#recc-cadt">Restatement of Cadential Theme</a></li>
+                            <li><a href="#recc-coda">Coda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#conc">Conclusion</a></li>
+                    <li><a href="#ref">References</a></li>
+                </ul>
+            </aside>
             <main>
                 <iframe
                     width="560"
@@ -99,7 +158,7 @@
                     allowfullscreen="true"
                 ></iframe>
                 <section>
-                    <h2>Introduction</h2>
+                    <h2 id="intro">Introduction</h2>
                     <p>
                         The Sonata No. 8, Op. 13 was composed by Beethoven in
                         1798 and was published in the year 1799. It was
@@ -156,8 +215,8 @@
                     </p>
                 </section>
                 <section>
-                    <h2>Introduction</h2>
-                    <h3>Introductory Theme</h3>
+                    <h2 id="si">Sonata Introduction</h2>
+                    <h3 id="si-introtheme">Introductory Theme</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1i1.png"
@@ -235,7 +294,7 @@
                         slightly with a scalar passage reminiscent of the
                         Fantasias of Bach.
                     </p>
-                    <h3>Expansion of Introductory Theme</h3>
+                    <h3 id="si-expansion">Expansion of Introductory Theme</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1i2.png"
@@ -293,8 +352,8 @@
                     </p>
                 </section>
                 <section>
-                    <h2>Exposition</h2>
-                    <h3>Theme 1.1</h3>
+                    <h2 id="expo">Exposition</h2>
+                    <h3 id="expo-t1.1">Theme 1.1</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1e1.png"
@@ -339,7 +398,7 @@
                         is required to develop a tremolo that is soft, smooth,
                         and musical.
                     </p>
-                    <h3>Connecting Passage</h3>
+                    <h3 id="expo-conp">Connecting Passage</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1e2.png"
@@ -379,7 +438,7 @@
                         43 to 45, readying for a possible second theme in E-flat
                         major.
                     </p>
-                    <h3>Theme 2.1</h3>
+                    <h3 id="expo-t2.1">Theme 2.1</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1e3.png"
@@ -441,7 +500,7 @@
                         E-flat minor, F minor, C minor, B-flat major, and then
                         back to E-flat major, according to James.
                     </p>
-                    <h3>Theme 2.2</h3>
+                    <h3 id="expo-t2.2">Theme 2.2</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1e4.png"
@@ -482,7 +541,7 @@
                         bringing us back down for the pattern to be repeated or
                         leading to the next part.
                     </p>
-                    <h3>Cadential Theme</h3>
+                    <h3 id="expo-cadt">Cadential Theme</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1e5.png"
@@ -541,7 +600,7 @@
                     </p>
                 </section>
                 <section>
-                    <h2>Development</h2>
+                    <h2 id="dev">Development</h2>
                     <p>
                         As previously stated, the development is when we begin
                         to play around with the themes, earlier presented, in
@@ -549,7 +608,7 @@
                         there are five themes: the introductory theme, theme
                         1.1, theme 2.1, theme 2.2, and the cadential theme.
                     </p>
-                    <h3>Restatement of Introduction</h3>
+                    <h3 id="dev-resi">Restatement of Introduction</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1d1.png"
@@ -596,7 +655,7 @@
                         occurrence whenever we see it. But onwards we go, to the
                         development!
                     </p>
-                    <h3>Alternation of Theme 1 and Introductory Theme</h3>
+                    <h3 id="dev-alter">Alternation of Theme 1 and Introductory Theme</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1d2.png"
@@ -626,7 +685,7 @@
                         repeated, this time in the key of D major, which gives
                         it a slightly more desperate feeling as it sinks lower.
                     </p>
-                    <h3>Restatement of Theme 1.1 in Bass</h3>
+                    <h3 id="dev-restat">Restatement of Theme 1.1 in Bass</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1d3.png"
@@ -676,7 +735,7 @@
                         more of thinned anger and small, pinpoint bursts that do
                         nothing to abate it rather than of sorrow.
                     </p>
-                    <h3>Dominant Pedal</h3>
+                    <h3 id="dev-domped">Dominant Pedal</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1d4.png"
@@ -737,8 +796,8 @@
                     </p>
                 </section>
                 <section>
-                    <h2>Recapitulation and Coda</h2>
-                    <h3>Restatement of Theme 1.1</h3>
+                    <h2 id="recc">Recapitulation and Coda</h2>
+                    <h3 id="recc-t1.1">Restatement of Theme 1.1</h3>
                     <p>
                         Now, something that may not have been obvious when I
                         introduced Sonata Form on the landing page would be the
@@ -795,7 +854,7 @@
                         difficult to determine on the first pass. Regardless, we
                         now move on:
                     </p>
-                    <h3>Restatement of Theme 2.1</h3>
+                    <h3 id="recc-t2.1">Restatement of Theme 2.1</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1r2.png"
@@ -826,7 +885,7 @@
                         move right back to G— preparing us for Theme 2.2, in the
                         key of C-minor.
                     </p>
-                    <h3>Restatement of Theme 2.2</h3>
+                    <h3 id="recc-t2.2">Restatement of Theme 2.2</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1r3.png"
@@ -869,7 +928,7 @@
                         danger with the minor melody humming over a minor
                         background: a danger that closens with every note.
                     </p>
-                    <h3>Restatement of Cadential Theme</h3>
+                    <h3 id="recc-cadt">Restatement of Cadential Theme</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1r4.png"
@@ -898,7 +957,7 @@
                         chords signal the end of the recapitulation and the
                         beginning of the coda.
                     </p>
-                    <h3>Coda</h3>
+                    <h3 id="recc-coda">Coda</h3>
                     <figure>
                         <img
                             src="../images/pathetique-1c.jpg"
@@ -943,7 +1002,7 @@
                     </p>
                 </section>
                 <section>
-                    <h2>Concluding Remarks</h2>
+                    <h2 id="conc">Concluding Remarks</h2>
                     <p>
                         Even this early in Beethoven’s music, we already begin
                         to see the hallmarks of his playing: an extended
@@ -961,7 +1020,7 @@
                         it is a developed form of something that appeared
                         earlier on. Thank you for reading!
                     </p>
-                    <h2>References</h2>
+                    <h2 id="ref">References</h2>
                     <ul>
                         <li>
                             Classic FM. (2014, October 3). Beethoven - Piano
@@ -1033,7 +1092,7 @@
                 <footer>
                     <!-- need the div to have a background and to venter text right -->
                     <div id="footer_center">
-                        <h2>Beethoven's Genius, Manifest</h2>
+                        <h3>Beethoven's Genius, Manifest</h3>
                         <img src="../images/cc-by.svg" alt="cc-by" />
                         <address>
                             Please notify the author of errors, whether in
