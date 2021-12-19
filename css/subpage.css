@@ -76,7 +76,7 @@ nav > ul > li {
     /*letter-spacing: 2px;*/
     /*line-height: -5px;*/
 
-    transition: background-color 500ms, color 500ms;
+    transition: background-color var(--transition-time), color var(--transition-time);
 }
 
 #link_index:hover {
@@ -215,19 +215,6 @@ aside::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
 }
 
-aside h3 {
-    display: none;
-}
-
-aside h4 {
-    margin: 15px 0 15px 0;
-    padding-left: 30px;
-
-    font-size: 24px;
-    font-weight: normal;
-    color: var(--aside-h4-col);
-}
-
 aside > ul {
     list-style: none;
     padding: 0;
@@ -236,14 +223,40 @@ aside > ul {
 
 aside > ul > li {
     border-top: 1px solid rgba(250, 250, 250, 0.1);
-
     padding: 10px 10px 10px 30px;
+
+    transition: background-color var(--transition-time);
+}
+
+aside > ul > li:hover {
+    background-color: var(--aside-hover-col);
 }
 
 aside > ul > li > a {
-    font-size: 20px;
     color: var(--aside-l1-col);
+    font-size: 20px;
     text-decoration: none;
+}
+
+aside > ul > li > ul {
+    list-style: none;
+    margin: 7.5px 0 0 0;
+    padding: 0;
+}
+
+aside > ul > li > ul > li {
+    margin: 0 0 5px 0;
+    padding: 0 0 0 30px;
+}
+
+aside > ul > li > ul > li > a {
+    color: var(--aside-l2-col);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+aside > ul > li > ul > li > a:hover {
+    color: var(--aside-l1-col);
 }
 
 @media (max-width: 1000px) {
@@ -274,6 +287,11 @@ aside > ul > li > a {
     }
 
     aside > ul > li > a {
+        font-size: 20px;
+        color: var(--main-text-col);
+    }
+
+    aside > ul > li > ul > li > a {
         font-size: 20px;
         color: var(--main-text-col);
     }
@@ -383,6 +401,9 @@ footer {
 }
 
 #footer_center > address {
+    /*font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;*/
     font-family: "Lora", serif;
+    font-style: italic;
     letter-spacing: 0.5px;
 }

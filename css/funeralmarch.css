@@ -1,4 +1,6 @@
 :root {
+    --transition-time: 0.5s;
+
     --nav-bg-col: #333333;
     --nav-hover-col: #222222;
     --nav-text-col: #ffffff;
@@ -10,6 +12,9 @@
     --main-tex-col: #000000;
 
     --aside-bg-col: #615a5f;
+    --aside-header-col: #544e52;
+    --aside-hover-col: #4a4649;
+    --aside-active-col: #3a3639;
     --aside-h4-col: #ffffff;
     --aside-l1-col: #eeeeee;
     --aside-l2-col: #bcbcbc;
