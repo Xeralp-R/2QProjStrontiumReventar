@@ -76,7 +76,8 @@ nav > ul > li {
     /*letter-spacing: 2px;*/
     /*line-height: -5px;*/
 
-    transition: background-color var(--transition-time), color var(--transition-time);
+    transition: background-color var(--transition-time),
+        color var(--transition-time);
 }
 
 #link_index:hover {
@@ -243,7 +244,7 @@ aside > ul > li > a {
     text-decoration: none;
 }
 
-aside > ul > li > a:hover{
+aside > ul > li > a:hover {
     color: var(--aside-l1-col);
 }
 
