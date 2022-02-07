@@ -27,26 +27,6 @@ nav {
     z-index: 10;
 }
 
-nav > button {
-    /* Display: none doesn't work, so I'm using a workaround. */
-    opacity: 0;
-
-    position: absolute;
-    right: 1vw;
-    top: 0;
-    height: 50px;
-    width: 50px;
-
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--nav-text-col);
-    border: none;
-    text-align: center;
-}
-
-nav > button:hover {
-    background-color: var(--nav-hover-col);
-}
-
 nav > ul {
     text-decoration: none;
     list-style: none;
@@ -80,6 +60,38 @@ nav > ul > li {
         color var(--transition-time);
 }
 
+nav > ul#mobile_nav {
+    /* Display: none doesn't work, so I'm using a workaround. */
+    display: none;
+}
+
+nav > ul#mobile_nav > li#left {
+    justify-content: left;
+}
+
+nav > ul#mobile_nav > li#right {
+    justify-content: right;
+}
+
+nav > ul#mobile_nav > li > button {
+    height: 50px;
+    width: 50px;
+    z-index: 11;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--nav-text-col);
+    border: none;
+    text-align: center;
+}
+
+nav > ul#mobile_nav > li > button:hover {
+    background-color: var(--nav-hover-col);
+}
+
+nav > ul#desktop_nav {
+    opacity: 1;
+}
+
 #link_index:hover {
     background-color: #7e2811;
     color: #ffffff;
@@ -111,26 +123,26 @@ a {
 }
 
 @media (max-width: 1000px) {
-    nav > button {
-        opacity: 1;
-        z-index: 11;
+    nav > ul#mobile_nav {
+        display: flex;
+        z-index: 10;
     }
 
-    nav > ul {
+    nav > ul#desktop_nav {
         position: absolute;
         top: -30vh;
-        z-index: 10;
+        z-index: 0;
 
         flex-direction: column;
         height: auto;
-        padding: 0 0 1vh 0;
+        /*padding: 0 0 1vh 0;*/
 
         background-color: var(--nav-bg-col);
     }
 
-    nav > ul > li {
+    nav > ul#desktop_nav > li {
         flex: 1;
-        padding: 1vh;
+        padding: 1vh 1vh 1.5vh 1vh;
     }
 
     @keyframes hover-in {

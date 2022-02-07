@@ -1,19 +1,17 @@
-/* to get the html elements */
-let button = document.getElementById("open_menu");
-let dropdown = document.querySelector("nav ul");
+/* to get the 1 button */
+let menu_button = document.getElementById("open_menu");
+let menu_dropdown = document.getElementById("desktop_nav");
 
 console.log("Test");
 
 // to detect mouse click on the menu */
-button.addEventListener("click", () => {
+menu_button.addEventListener("click", () => {
     console.log("clicked!");
     /* text which @keyframes to assign */
-    if (dropdown.style.animationName == "hover-in")
-        dropdown.style.animationName = "hover-out";
-    else dropdown.style.animationName = "hover-in";
+    if (menu_dropdown.style.animationName == "hover-in")
+        menu_dropdown.style.animationName = "hover-out";
+    else menu_dropdown.style.animationName = "hover-in";
 
-    dropdown.style.animationDuration =
-        "0.5s"; /* how fast/slow will the animation will be executed */
-    dropdown.style.animationFillMode =
-        "forwards"; /*what will happen after the animation */
+    menu_dropdown.style.animationDuration = "0.5s"; /* how fast/slow will the animation will be executed */
+    menu_dropdown.style.animationFillMode = "forwards"; /*what will happen after the animation */
 });
