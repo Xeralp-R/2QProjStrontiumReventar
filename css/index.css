@@ -8,7 +8,8 @@
     --main-bg-col: #ffffff; /*fffdd1ee, if necessary*/
     --main-tex-col: #000000;
 
-    --footer-bg-col: #7e2811;
+    --footer-bg-col: #dcdcdc;
+    --footer-fg-col: #000000;
 }
 
 /* Overarching Design */
@@ -190,7 +191,7 @@ footer {
     box-sizing: border-box;
 
     background-color: var(--footer-bg-col);
-    color: var(--header-text-col);
+    color: var(--footer-fg-col);
     width: 100%;
 
     margin: 0;
@@ -222,4 +223,41 @@ footer {
 #footer_center > address {
     font-family: 'Lora', serif;
     letter-spacing: 0.5px;
+}
+
+#sc {
+    height: 50px;
+    padding: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#sc a {
+    width: 50px;
+    height: 50px;
+}
+
+#sc a#fb {
+    background: url("../images/img_sprite.png") no-repeat -18px -18px;
+}
+
+#sc a#fb:hover {
+    background: url("../images/img_sprite.png") no-repeat -18px calc(-18px - 168px);
+}
+
+#sc a#tw {
+    background: url("../images/img_sprite.png") no-repeat -97px -18px;
+}
+
+#sc a#tw:hover {
+    background: url("../images/img_sprite.png") no-repeat -97px calc(-18px - 168px);
+}
+
+#sc a#yt {
+    background: url("../images/img_sprite.png") no-repeat -182px -18px;
+}
+
+#sc a#yt:hover {
+    background: url("../images/img_sprite.png") no-repeat -182px calc(-18px - 168px);
 }

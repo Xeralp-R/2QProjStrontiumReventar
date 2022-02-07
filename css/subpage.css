@@ -301,24 +301,24 @@ aside > ul > li > ul > li > a:hover {
     aside {
         position: absolute;
         top: 0px;
-        left:-300px;
+        left: -300px;
         /*filter: drop-shadow(0 0 10px black);*/
     }
 
     @keyframes fly-in-aside {
         from {
-            left:-300px;
+            left: -300px;
         }
         to {
-            left:0px;
+            left: 0px;
         }
     }
     @keyframes fly-out-aside {
         from {
-            left:0px;
+            left: 0px;
         }
         to {
-            left:-300px;
+            left: -300px;
         }
     }
 }
@@ -432,4 +432,41 @@ footer {
     font-family: "Lora", serif;
     font-style: italic;
     letter-spacing: 0.5px;
+}
+
+#sc {
+    height: 50px;
+    padding: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#sc a {
+    width: 50px;
+    height: 50px;
+}
+
+#sc a#fb {
+    background: url("../images/img_sprite.png") no-repeat -18px -18px;
+}
+
+#sc a#fb:hover {
+    background: url("../images/img_sprite.png") no-repeat -18px calc(-18px - 168px);
+}
+
+#sc a#tw {
+    background: url("../images/img_sprite.png") no-repeat -97px -18px;
+}
+
+#sc a#tw:hover {
+    background: url("../images/img_sprite.png") no-repeat -97px calc(-18px - 168px);
+}
+
+#sc a#yt {
+    background: url("../images/img_sprite.png") no-repeat -182px -18px;
+}
+
+#sc a#yt:hover {
+    background: url("../images/img_sprite.png") no-repeat -182px calc(-18px - 168px);
 }

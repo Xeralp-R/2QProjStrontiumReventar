@@ -24,7 +24,9 @@ let toc_button = document.getElementById("open_toc");
 let toc_content = document.getElementsByTagName("aside")[0];
 
 window.addEventListener("scroll", () => {
-    toc_content.style.top = `${window.pageYOffset + 50}px`;
+    if (window.innerWidth < 1000) {
+        toc_content.style.top = `${window.pageYOffset + 50}px`;
+    }
 });
 
 toc_button.addEventListener("click", () => {
