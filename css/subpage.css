@@ -235,6 +235,8 @@ aside {
     background-color: var(--aside-bg-col);
     color: var(--aside-fg-col);
 
+    z-index: 10;
+
     overflow: scroll;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
@@ -293,39 +295,31 @@ aside > ul > li > ul > li > a:hover {
 
 @media (max-width: 1000px) {
     #body-wrapper {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: contents;
     }
 
     aside {
-        position: static;
-        height: auto;
-
-        width: 90%;
-        max-width: 90%;
-
-        background-color: var(--main-bg-col);
-        color: var(--main-text-col);
+        position: absolute;
+        top: 0px;
+        left:-300px;
+        /*filter: drop-shadow(0 0 10px black);*/
     }
 
-    aside h4 {
-        color: var(--main-text-col);
-        margin-top: 50px;
+    @keyframes fly-in-aside {
+        from {
+            left:-300px;
+        }
+        to {
+            left:0px;
+        }
     }
-
-    aside h4::after {
-        content: " Table of Contents";
-    }
-
-    aside > ul > li > a {
-        font-size: 20px;
-        color: var(--main-text-col);
-    }
-
-    aside > ul > li > ul > li > a {
-        font-size: 20px;
-        color: var(--main-text-col);
+    @keyframes fly-out-aside {
+        from {
+            left:0px;
+        }
+        to {
+            left:-300px;
+        }
     }
 }
 
