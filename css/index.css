@@ -88,6 +88,16 @@ nav > ul > li {
     color: #ffffff;
 }
 
+#link_lesadieux:hover {
+    background-color: #b87333;
+    color: #ffffff;
+}
+
+#link_sonata32:hover {
+    background-color: #003153;
+    color: #ffffff;
+}
+
 a {
     color: inherit;
     text-decoration: underline;
