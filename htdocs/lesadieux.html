@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Beethoven's Genius Manifest: Les Adieux Sonata</title>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Rex Alphonse Reventar" />
+        <meta
+            name="description"
+            content="An introduction to Beethoven's Piano Sonatas"
+        />
+        <meta
+            name="keywords"
+            content="beethoven, sonatas, analysis, music theory, Les Adieux"
+        />
+        <meta name="date" content="02/07/2022" />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../images/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../images/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../images/favicons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../images/favicons/site.webmanifest" />
+
+        <!-- stylesheets and fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,350;0,400;0,600;0,700;1,300;1,350;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+
+        <link rel="stylesheet" href="../css/lesadieux.css" />
+        <link rel="stylesheet" href="../css/subpage.css" />
+        <script
+            type="text/javascript"
+            src="../scripts/subpage.js"
+            defer
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <button
+                class="material-icons"
+                style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+                type="button"
+                id="open_menu"
+            >
+                view_headline
+            </button>
+            <ul>
+                <li
+                    class="material-icons"
+                    style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    "
+                    id="link_index"
+                >
+                    <a href="../index.html">home</a>
+                </li>
+                <li id="link_pathetique">
+                    <a href="./pathetique.html">Pathetique</a>
+                </li>
+                <li id="link_funeral">
+                    <a href="./funeralmarch.html">Funeral March</a>
+                </li>
+                <li>Waldstein</li>
+                <li>Les Adieux</li>
+                <li>Hammerklavier</li>
+            </ul>
+        </nav>
+        <header>
+            <!-- need the div to have a background and to center text right -->
+            <div id="header_center">
+                <h1>Les Adieux Sonata</h1>
+                <h2>Sonata No. 26; Op. 81a; 1st Movement</h2>
+            </div>
+        </header>
+        <div id="body-wrapper">
+            <aside>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#sonint">Sonata Introduction</a></li>
+                    <li>
+                        <a href="#expo">Exposition</a>
+                        <ul>
+                            <li><a href="#expo-t1">Theme Group 1</a></li>
+                            <li><a href="#expo-tt">Transition</a></li>
+                            <li><a href="#expo-t2">Theme Group 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#dev">Development</a>
+                        <ul>
+                            <li><a href="#dev-p1">Part 1</a></li>
+                            <li><a href="#dev-p2">Part 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#recap">Recapitulation</a></li>
+                    <li>
+                        <a href="#coda">Coda</a>
+                        <ul>
+                            <li><a href="#coda-t1">Theme Group 1</a></li>
+                            <li>
+                                <a href="#coda-t2"> Theme Group 2 </a>
+                            </li>
+                            <li><a href="#coda-tp">Coda Proper</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#conc">Conclusion</a></li>
+                    <li><a href="#ref">References</a></li>
+                </ul>
+            </aside>
+            <main>
+                <iframe
+                    src="https://www.youtube.com/embed/gEpeKi5R1Wo?autoplay=1&mute=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+                <section>
+                    <h2 id="intro">Introduction</h2>
+                    <p>
+                        From the funeral March sonata written in the beginning
+                        of his middle period, we now jump to what can be
+                        considered the final middle-period sonata: the Les
+                        Adieux sonata, written in 1809 and 1810. This is unique
+                        among his sonatas in that it is explicitly programmatic
+                        or that there is a &ldquo;hidden meaning&rdquo; of sorts
+                        to the music he wrote, something that he experimented
+                        with in the 6th &ldquo;Pastorale&rdquo; symphony as
+                        well. The story behind this sonata is related to the
+                        Archduke Rudolph, who was a great patron of Beethoven
+                        (with important works such as the &ldquo;Archduke
+                        Trio&rdquo;, op. 97, the 4th Piano Concerto, op. 58, and
+                        the Missa Solemnis, op. 123, all being dedicated to him)
+                        and at the same time a great musician (Beethoven created
+                        for him a large number of cadenzas that are all somewhat
+                        difficult to execute). In 1809, due to Napoleon&rsquo;s
+                        War of the Fifth Coalition, Vienna was lain under seige
+                        in the Battle of Wagram: because of this, the royal
+                        family had to leave for their safety, including the same
+                        Archduke. It with the feelings that Beethoven was
+                        experiencing around this time&mdash; those of loss and
+                        anxiety, and eventually the joy what the Archduke
+                        returned after the war&mdash; that led him to write this
+                        sonata.
+                    </p>
+                    <p>
+                        The piece itself is in the mold of a traditional sonata:
+                        it has 3 movements, following the fast-slow-fast
+                        movement form. The first movement is in E-flat major,
+                        and is titled &ldquo;Das Lebewohl&rdquo; or &ldquo;The
+                        Farewell&rdquo;: it has an Adagio introduction followed
+                        by a healthy Allegro, much like how the Sonata
+                        Pathetique had a Grave introduction followed by an
+                        Allegro&mdash; so we see how Beethoven&rsquo;s usage of
+                        introductions evolves throughout his oeuvre. The second
+                        movement is an Andante Expressivo in C minor, and is
+                        titled &ldquo;Das Abwesenheit&rdquo; or &ldquo;The
+                        Absence&rdquo;: it uses a few themes repeated throughout
+                        in key after key to express the cycle of emotions that
+                        the persona feels while the other person is absent that
+                        recur over and over again. This is then interrupted by
+                        the final movement in the home key of E-flat major,
+                        which is titled &ldquo;Das Wiedersehen&rdquo; or
+                        &ldquo;The Return&rdquo;, and is marked Vivacissimamente
+                        or &ldquo;As lively as possible&rdquo;: it is also in
+                        sonata form, and it expresses the joy of seeing the
+                        other person again in an almost-orchestral manner, with
+                        specific passages evoking a piano concerto and thus
+                        foreshadowing future &ldquo;Concertos for Solo
+                        Piano&rdquo;.
+                    </p>
+                    <p>
+                        The score was taken from the Wallner Edition, which was
+                        published by Henle Verlag in 1976. That edition is an
+                        urtext edition, so while I believe it is legal here in
+                        the Philippines, I am not so sure about the situations
+                        in other countries. The same applies for the recordings
+                        which I have duly cut up into the component parts: These
+                        were made by Fritz Jank in 1962. All of these resources
+                        can be found in the
+                        <a
+                            href="https://imslp.org"
+                            target="”_blank”"
+                            rel="noopener noreferrer"
+                            >International Music Score Library Project, ot the
+                            Petrucci Music Library.
+                        </a>
+                    </p>
+                </section>
+                <section>
+                    <h2 id="sonint">Sonata Introduction</h2>
+
+                    <figure>
+                        <img
+                            src="../images/lesadieux-0.png"
+                            alt="first three lines"
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-0.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        The sonata opens with its most important motif: the
+                        &ldquo;Lebewohl&rdquo; motif, which Beethoven actually
+                        marked with the words &ldquo;Le-be-wohl&rdquo; over the
+                        notes. The motif is composed of a pair of voices
+                        outlining a descending 3-2-1 motif, which starts on G
+                        and ends on E-flat. Both the particular rhythm and the
+                        notes will be used again and again in different contexts
+                        of the sonata, so I believe it&rsquo;s well worth
+                        remembering. We should also note the left hand, which
+                        only enters in the third note: it plays a C, which
+                        recontextualizes the notes above and changes it from an
+                        E-flat major chord (which is the expected happy chord to
+                        end the motif) to a C-minor chord, which gives it a
+                        certain sadness and sentimentality brought by that
+                        surprise change in harmony. Lastly, it is often
+                        commented that this particular motif sounds like it
+                        would be a horn call: horns are noted for their soft,
+                        round, and gentle sound, which is something that many
+                        people feel is appropriate for this particular part.
+                        Jonathan Biss, a well-renowned pianist, noted that this
+                        marks an evolution in Beethoven&rsquo;s capacity for
+                        writing orchestral parts for piano solo: where he feels
+                        that the drums and horn calls in the 3rd movement of the
+                        previous funeral march sonata only impede or interrupt
+                        the mournful feeling of the piece, here he notes that
+                        the horn calls at the beginning add meaning and emotion
+                        to the piece, which may mark a significant improvement
+                        on Beethoven&rsquo;s part in writing orchestrally for
+                        piano.
+                    </p>
+                    <p>
+                        After this &ldquo;Lebewohl&rdquo; motif, we see another:
+                        a rise of 3 notes, where the last 2 notes are higher
+                        than the first note. This motif, which I will call the
+                        &ldquo;jumping&rdquo; motif, is repeated 3 times in the
+                        first line and reaches ever-higher and more wistful
+                        heights. Compounded with the bass, which is falling
+                        chromatically (Schiff (2004-2006) refers to this as the
+                        &ldquo;Passus Duriusculus&rdquo;), and we see that this
+                        next bar feels very unstable, as if we&rsquo;re
+                        searching for a center or floating unmoored. This
+                        downward chromatic movement, series of incomplete
+                        harmonies (which, in the formal terminology, are called
+                        half-cadences), and constant switching between major and
+                        minor and between registers of the piano continues on
+                        for another 3 bars before we reach bar 7, which has
+                        another instance of the Lebewohl motif, now more
+                        outlined, preparing us for a true cadence.
+                    </p>
+                    <p>
+                        However, this is diverted yet again in bar 8, where we
+                        see that instead of resolving to E-flat major as we want
+                        to hear or in C-minor as we heard earlier, it resolves
+                        to C-flat major, a key with 7 flats and that is far away
+                        from either E-flat major or C-minor. It then continues
+                        on with the jumping motif in a progression very similar
+                        to the one we heard earlier but now in the new key,
+                        which gives it a slightly happier feeling and an
+                        entirely new color that is wholly different from the one
+                        we heard earlier&mdash; it feels at least slightly
+                        detached from the rest, like another person talking. We
+                        then have the unstable progression repeated again and
+                        again, with the bass always descending chromatically,
+                        which slowly darkens the mood until we reach Bar 12, and
+                        then rest.
+                    </p>
+                    <p>
+                        Starting in Bar 12, we now get a new progression, which
+                        I think feels more like a natural extension of the
+                        previous bar&rsquo;s lament as it grows more and more
+                        despondent. In particular, this passage is filled to the
+                        brim with rests: similarly to the Sonata Pathetique,
+                        Beethoven&rsquo;s rests in particular are used to
+                        heighten the drama, and here they contrast with the
+                        constantly moving harmonies of the previous bars to
+                        emphasize the feeling of despair that permeates this
+                        passage. Other techniques can also be used to emphasize
+                        the emptiness: for example, Schiff uses a staccato
+                        attack to make it shorter, while Oppitz lifts the pedal
+                        early to interrupt the sound. In either case, the rests
+                        become more and more prevalent, until at the very end of
+                        the passage there is a rest after every note and the
+                        emotion reaches its height.
+                    </p>
+                </section>
+                <section>
+                    <h2 id="expo">Exposition</h2>
+
+                    <h3 id="expo-t1">Theme Group 1</h3>
+                    <figure>
+                        <img
+                            src="../images/lesadieux-1.png"
+                            alt="first three lines"
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-1.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        Directly from the gaping octaves of the end of the
+                        Adagio, we get a huge statement of the octave in forte
+                        which hugely contrasts with the previous section and
+                        marks the beginning of the Allegro. We now get the first
+                        theme of this theme group, which I will call Theme 1.1:
+                        it is composed of the first four (4) bars of the
+                        Allegro, in the edition bars 17-20, and it is composed
+                        of two (2) figures plus the octave at the very front.
+                        The first figure has this rising pattern highlighted in
+                        red: I believe that it is directly taken as an extension
+                        of the &ldquo;jumping&rdquo; motif at the very beginning
+                        (Tovey suggests, however, that it might be accidental),
+                        with the left hand being an extension of the chromatic
+                        descents that also occurred and recurred over and over
+                        again at the start of the piece. The second figure is
+                        composed of rising legato octaves in the right hand (one
+                        of the many unique challenges this piece presents to the
+                        pianist) and diatonically falling thirds in the left
+                        hand, which I think feels very much like a natural
+                        extension of the first figure. Because of the fact that
+                        these 4 bars feel more like extensions of the previous
+                        segment rather than themes in their own right given that
+                        they are constructed from the same materials as the
+                        introduction, it can be difficult to feel like this is a
+                        theme at all: however, because of the fact that it
+                        recurs over and over again in the development section, I
+                        think it can be safely considered as a theme.
+                    </p>
+                    <p>
+                        The next theme in this theme group comprises another 8
+                        bars, from bars 21 to 28&mdash; as per the above naming
+                        system, I will refer to it as Theme 1.2. The right hand
+                        is composed of octaves quickly changing register which
+                        sing this very beautiful tune laden with dynamics and
+                        expression. Even though, at its greatest, the right hand
+                        can jump as high as 2 octaves, I think it feels more
+                        like an opera singer using their full ambitus or range
+                        to express themselves rather than multiple voices
+                        chiming in to sing the part. I think that the right hand
+                        lends most of the sentimentality of this theme, because
+                        of the sheer fact that it refuses to resolve: it avoids
+                        resolution after resolution and keeps on hanging on to
+                        the dominant, b-flat major, which lends it more
+                        sentimentality and more drive. In the left hand, we see
+                        an arpeggiated accompaniment figure. Schiff notes that
+                        the left hand plays an inversion of the Lebewohl motif:
+                        the first lowest bass note is E-flat, then F, then G,
+                        much as the Lebewohl motif is G, then F, then E-flat:
+                        this particular progression is then emphasized or
+                        accented by most pianists, for example by Barenboim in
+                        the above video. However, Tovey notes that we need to be
+                        cautious about searching and perhaps over-highlighting
+                        all of the instances of the Lebewohl motif: he argues
+                        that it was intentionally added not necessarily for the
+                        listener to pay attention to it but rather for the
+                        subconscious to detect it and then associate it with the
+                        sad emotions of the beginning, to be an undercurrent of
+                        sadness to the excitability of the right hand. I believe
+                        that we should still emphasize the lower notes, but
+                        nevertheless take Tovey&rsquo;s note into consideration,
+                        as his explanation lends credence to why this part still
+                        feels very sentimental even though we&rsquo;re now going
+                        at a full allegro.
+                    </p>
+
+                    <h3 id="expo-tt">Transition</h3>
+                    <figure>
+                        <img
+                            src="../images/lesadieux-2.png"
+                            alt="4 lines of page 2 minus the 1st bar and minus 3 bars at the end;"
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-2.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        The transition comprises a full 21 bars: this is by far
+                        an absolutely gigantic transition, especially when
+                        compared to the first theme group which is only around
+                        half as long. This is in stark comparison to the Sonata
+                        Pathetique, where the first theme group and the
+                        transition are of about equal length, or the Funeral
+                        March Sonata, where the transition is around the same
+                        length as the B part. I think this is primarily due to
+                        the sheer economy of the first theme group: because so
+                        many of the ideas have already been exposed, the first
+                        group can be significantly shorter than usual, which
+                        means the transition feels oddly out of proportion.
+                        Tovey also notes that &ldquo;one of the best ways of
+                        getting an effect of breadth in a short time is by
+                        devoting ample space to dominant preparation&rdquo;
+                        (Tovey, p.190-191): in this case, the harmonies mostly
+                        emphasize the dominant of the dominant, F, in order to
+                        prepare the second theme group which is in the dominant
+                        key. Lastly, the fact that it stays so long without
+                        resolving properly into the dominant combined with its
+                        fast speed gives it a breathless feeling, as if someone
+                        is trying to catch up to the person who is leaving to
+                        say goodbye or something like that. This is emphasized
+                        by the writing of the next theme group, when we have 2
+                        voices interlocking. As for its structure, the Lebewohl
+                        motif permeates this entire passage, this time in
+                        diminution or in small note values: this transition can
+                        prove difficult due to the rather fast scales in thirds
+                        and in chords that can trip up the player.
+                    </p>
+
+                    <h3>Theme Group 2</h3>
+                    <figure>
+                        <img
+                            src="../images/lesadieux-3.png"
+                            alt="Last 3 lines of Page 2 and first line of Page 3."
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-3.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        After that, we have the first theme of the second theme
+                        group, Theme 2.1, in the expected key of B-flat major.
+                        The uppermost voice of the right hand very clearly has
+                        the Lebewohl motif, this time with an extra tail that
+                        allows the voice to wander for the duration of the
+                        third, longest, note. Beneath this, we have an extension
+                        of the eighth-note figures that we saw earlier in the
+                        lower right hand, which adds a little bit of difficulty:
+                        lastly, in the left hand, we have a syncopated chord
+                        progression (which may be based on the jumping motif of
+                        the introduction, but that&rsquo;s probably accidental)
+                        that, when placed in contrast with the rather placid
+                        right hand, gives it a little bit of a jaunty character.
+                        After the statement of the Lebewohl in the double-high
+                        register 2 octaves above middle C, we get a repeat of
+                        the same statement in the high register 1 octave above
+                        middle C: I believe that this part feels like 2 voices
+                        repeating the same thing, and in particular the
+                        interpretation above makes it feel like 4 voices, with
+                        the top right and and the left hand contrasting each
+                        other. Together, the rich harmonization that constantly
+                        surrounds this part and its unique lyricism that stands
+                        out from the motivism of the previous sections makes it
+                        one of the most meaningful parts of the Sonata every
+                        time it reemerges.
+                    </p>
+                    <p>
+                        After this, the three voices compress onto one staff,
+                        making these next few bars somewhat tricky to interpret.
+                        The interpreter above, Barenboim, emphasizes the lowest
+                        voice as it descends while he changes the upper voice to
+                        be playing accompaniment to give the illusion that the
+                        eighth-note figures from the previous theme are
+                        continuing, as does Schiff: Oppitz and Lortie, however,
+                        either allow the the bass voice and the top voice
+                        equality or alternate between emphasizing the bass voice
+                        and the top voice. In either case, the decision is for
+                        the interpreter to make. After those 4 bars, the music
+                        simplifies to two voices that begin repeating and
+                        passing off to each other (or &ldquo;imitating&rdquo;)
+                        the Lebewohl motif, first in diminution (again, in short
+                        note values) and then simplified to 2 notes, the second
+                        being longer than the first. After that, the music slows
+                        and softens to an almost complete halt, when we get the
+                        full Lebewohl motif in whole notes in the left hand but
+                        is then interrupted by the right hand after 2 bars to
+                        either prepare us for the return to the exposition or to
+                        move the harmony onward to the dominant.
+                    </p>
+                </section>
+                <section>
+                    <h2 id="dev">Development</h2>
+                    <p>
+                        In the middle and late periods of Beethoven&rsquo;s
+                        life, we begin to see more and more compression: the
+                        development is no exception to this general trend, with
+                        a significant number of harmonic and melodic changes all
+                        occurring, sometimes even with implied harmonies. While
+                        it can be divided any number of ways, I have elected to
+                        divide it into 2 parts, as per the work of Kumar (2017).
+                    </p>
+
+                    <h3 id="dev-p1">Part 1</h3>
+                    <figure>
+                        <img
+                            src="../images/lesadieux-4.png"
+                            alt="4 lines of Page 3"
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-4.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        The development starts with the connecting passage
+                        leading straight into a statement of only the head of
+                        Theme 1.1 in the key of C-minor. Right after this,
+                        however, we get a rather mysterious part which makes us
+                        feel unsteady or unmoored: statements of the (altered)
+                        Lebewohl motif, alone and unharmonized, alternate with
+                        huge chords and constantly-shifting statements of the
+                        jumping motif in the left hand. Another interpretation
+                        has it that the chord is actually the third, long, note
+                        of the Lebewohl motif with extra harmonization, albeit
+                        noticing this requires a certain balance to the chords
+                        that I have not yet heard. The fact that there is so
+                        much empty space in this theme compounded with the
+                        chromaticity of the chords makes this part feel very
+                        alone&mdash; it echoes the second movement&rsquo;s
+                        constant use of the jumping theme to express loneliness.
+                        Interestingly, Tovey is able to make sense of the
+                        progression by extracting every chord and then
+                        demonstrating how the Lebewohl motif is both a natural
+                        extension of the chords and bridges gaps between the
+                        chords (p.192), albeit parsing it requires an advanced
+                        understanding of harmonic language that I do not have.
+                        In any event, it then reaches the dominant key of
+                        B-flat, where it repeats itself to mark its importance
+                        (and maybe heralding the beginning of the
+                        recapitulation) before slipping up chromatically and
+                        having Theme 1.1 enter in A-flat then fall into G-flat
+                        major before diverting into the second half of the
+                        development.
+                    </p>
+
+                    <h3 id="dev-p2"></h3>
+                    <figure>
+                        <img
+                            src="../images/lesadieux-5.png"
+                            alt="Last bar of line 4, lines 5 and 6, first 2 bars of Page 4"
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-5.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        In my opinion, these 16 bars of development are all
+                        there to lead back to the recapitulation: much as the
+                        transition between Theme 1.2 and Theme 2.1 was
+                        extraordinarily long, so is this transition between the
+                        Development and the Recapitulation. At this point,
+                        everything becomes very slow and placid, almost
+                        despairing and lifelorn: everything is set in piano
+                        softening to pianissimo, and the right hand chords seem
+                        to be falling under their own weight. In the left hand,
+                        we just have the jumping motif constantly playing, like
+                        an ostinato, no longer adding to the bounciness of the
+                        theme but rather sputtering out and dying. The first
+                        four bars of this section have both the right hand and
+                        the left hand falling together: this first part uses
+                        enharmonic shifting to modulate from the G-flat major of
+                        the previous statement of Theme 1.1 into C minor, with
+                        Tovey highlighting the 2nd bar (Bar 95) in particular as
+                        being the one to shift from one key to the other. After
+                        those four (4) bars, the left hand settles of the note C
+                        instead of falling any further: however, the right hand
+                        just continues falling and falling. This goes on for
+                        another 6 bars before the left hand is simplified, the
+                        aforementioned &ldquo;sputtering out&rdquo;: it now just
+                        becomes a single broken octave, repeated twice. Before
+                        long, we settle on a single chord: C, E-flat, and
+                        A-flat, which, after 3 bars of tension, expands to the
+                        right hand, builds up in a technique called
+                        &ldquo;stretto&rdquo;, and leads us directly back to the
+                        recapitulation.
+                    </p>
+                </section>
+                <section>
+                    <h2 id="recap">Recapitulation</h2>
+                    <figure>
+                        <img
+                            src="../images/lesadieux-6.png"
+                            alt="Page 4 minus first 2 bars, 3 lines of Page 5 and next 2 bars"
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-6.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        I don&rsquo;t think the recapitulation is of too much
+                        interest, given that it is an almost exact reproduction
+                        of the exposition. There are only a few differences
+                        between this section and the exposition. The least
+                        important changes happen to the transition and the
+                        second theme group: the most obvious one is that the
+                        passage is transposed to the tonic of E-flat major, but
+                        it may also include moving the passage 1 octave up,
+                        adding an extra note to fill out the octave, or removing
+                        an extra bar to modulate correctly. However, what I
+                        think is the most important change for the pianist to
+                        note happens in bar 118: here, the left-hand voicing is
+                        very slightly altered to have the &ldquo;Lebewohl&rdquo;
+                        motif occur in half notes and then stall for extra-long
+                        on the third note rather than in whole notes. According
+                        to Tovey, this change is intentional: the autograph
+                        shows that he wrote out this altered figure after
+                        crossing out the original version, the direct copy of
+                        Bar 25. Furthermore, this very slight, perhaps only
+                        subconscious change comes to fruition in the Coda, where
+                        a very similar passage in the left hand occurs close to
+                        the climax of dramatic action&mdash; thus, in my
+                        purview, it is not a good idea to correct it (for
+                        example, as Hans Bulow does in his &ldquo;Instructive
+                        Edition&rdquo;).
+                    </p>
+                </section>
+                <section>
+                    <h2 id="coda">Coda</h2>
+                    <p>
+                        One of the characteristics that makes the Les Adieux
+                        sonata so unique is that its coda is so long: where the
+                        exposition only comprises one and a half pages, and the
+                        development comprises only 1 page, the coda comprises
+                        two and a half pages: The fact that the Coda is both so
+                        long and has so much thematic development (rather than
+                        just restatements of the theme, as in the first movement
+                        of the Sonata Pathetique or in the last movement of the
+                        Moonlight Sonata) sets it apart from the other sonatas
+                        of its day. Jonathan Biss notes that this emphasis on
+                        both the Coda and the Introduction was such a large
+                        innovation that it began to bend the rules of what can
+                        compose a sonata: he notes that this is only one in a
+                        long line of compromises, ranging from focusing more on
+                        the intervals of the third and the sixth rather than the
+                        fifth as in his late sonatas, to not having any movement
+                        in sonata form like the Funeral March Sonata, to having
+                        protracted and thematic intros and codas like this
+                        sonata, to removing the development altogether as per
+                        the 2nd movement of the Tempest Sonata. In this case, I
+                        think it&rsquo;s better to think of the coda like an
+                        altered 2nd repeat of the recapitulation and then the
+                        actual Coda, which is somewhere at the end. Thus, we can
+                        divide it into 3: first theme group, second theme group,
+                        and ending.
+                    </p>
+
+                    <h3 id="coda-t1">Theme Group 1</h3>
+                    <figure>
+                        <img
+                            src="../images/lesadieux-7.png"
+                            alt="Last 3 lines of 5th page minus first 2 bars, first line of Page 6"
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-7.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        The coda begins with 4 bars of transition: these mirror
+                        the last 4 bars of the Exposition, which lead either to
+                        its own repeat or into the Development. Of course, it
+                        can be argued whether this is actually part of the Coda
+                        or part of the previous Recapitulation: the sources I
+                        have read, however, mostly agree that this transition is
+                        part of the Coda. This passage modulates us to the
+                        interesting key of F-minor, on the second scale degree
+                        of E-flat major.
+                    </p>
+                    <p>
+                        We then have both Theme 1.1 and Theme 1.2 in the key of
+                        F-minor. This is one of the most important moments in
+                        the whole sonata for both themes. The first theme
+                        changes so that there are no more held notes: combined
+                        with the fact that this occurrence is in a minor key
+                        rather than in the major keys of previous occurrences, I
+                        think this passage feels very desperate and yearning.
+                        The tail of the theme in particular is interesting: the
+                        changed contour of the notes due to the sudden
+                        inflection downward at the end really deepens and
+                        strengthens the emotions present in the music. However,
+                        I feel like the greatest transformation happens not to
+                        Theme 1.1 but rather to Theme 1.2&mdash; This particular
+                        instance of the theme, in my opinion, is the climax of
+                        the entire work: the desperation and yearning that has
+                        been roiling and building up is let go in this very
+                        moment, and the anguish and true wish to keep the other
+                        person from departing presents itself in its strongest
+                        form. Barenboim, in particular, has a very effective
+                        interpretation where he adds an extra pause after the 4
+                        jumping octaves to contrast the jumping octaves with the
+                        tail of Theme 1.2. After this occurrence of Theme 1.2 in
+                        F minor, Beethoven prolongs the moment, in a sense, by
+                        providing half of a repetition in the key of E-flat
+                        minor: however, this repetition is interrupted by a
+                        modulation in what is supposed to be the second half of
+                        the theme. (This is where the previously mentioned
+                        &ldquo;odd movement&rdquo; of the left hand recurs yet
+                        again, this time being used to modulate.) At this point,
+                        we can say that the theme &ldquo;explodes&rdquo;: having
+                        reached its dramatic height, it disappears just as
+                        dramatically, in this case never to be seen again. Thus,
+                        all that remains is the Lebewohl motif and its dying
+                        out.
+                    </p>
+
+                    <h3 id="coda-t2">Theme Group 2</h3>
+                    <figure>
+                        <img
+                            src="../images/lesadieux-8.png"
+                            alt="Image of 5 lines of Page 6 and first 2 lines of Page 7 minus the last 4 bars"
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-8.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        We begin with a transition from that
+                        &ldquo;cliffhanger&rdquo;, in a sense: yet again, we see
+                        that Beethoven uses the Lebewohl motif to bring us to
+                        the right key, this time without interruptions from
+                        chords but instead bringing us there via dialogue
+                        between the left hand and the right hand. It is this way
+                        that he is able to bring us back home to the tonic key
+                        for Theme 2.1. He prepares us for the entrance by using
+                        a false cadence in bar 195 on the mediant or on G, which
+                        is the exact same note that Theme 2.1 starts with.
+                    </p>
+                    <p>
+                        When Theme 2.1 occurs (some 16 bars later, it should be
+                        noted), it is also changed: gone now are the jumping
+                        chords of the right hand and the trill-like
+                        accompaniment of the alto voice, and all that remains is
+                        the melody itself and a counterpoint in eight-notes.
+                        Especially in comparison to the rich accompaniment and
+                        full tone of the previous recurrences of Theme 2.1, this
+                        one feels more simple and sweet. After the first half of
+                        the theme, the Lebewohl motif moves into the left hand
+                        and the counterpoint into the right&mdash; the left hand
+                        is only able to go on for 2 measures, however, before
+                        repeating those 2 bars again in the middle octave and
+                        again in the high octave before falling down for another
+                        2 bars. The two hands then repeat this dance, with only
+                        slight variations: the 4-bar theme perfectly in the
+                        right hand, then the same theme cut up again in the left
+                        hand and rising for 6 bars. However, instead of falling
+                        in 2 bars, it takes 4 bars to fall back down, this time
+                        reusing the short-long-short pattern of the left hand
+                        all the way back in the first occurrence of Theme 2.1
+                        and softening to an almost complete halt.
+                    </p>
+
+                    <h3 id="coda-tp">Coda Proper</h3>
+                    <figure>
+                        <img
+                            src="../images/lesadieux-9.png"
+                            alt="Last 4 bars of Line 2, all other lines"
+                        />
+                        <audio controls src="../mmfiles/lesadieuxaudio-9.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <p>
+                        The first part of this coda recalls the transition from
+                        the First Theme Group to the Second Theme Group: it also
+                        has the Lebewohl motif deconstructed, albeit this time
+                        always in the key of E-flat major. This deconstruction
+                        goes on for 12 bars, and the meaning behind it is
+                        well-hidden, if it exists at all. Both Perahia (2019),
+                        in the introduction to his edition of the sonatas, and
+                        Agmon (1996) suspect that this part may be more
+                        psychological compared to anything else: the ultimate
+                        goal of these 12 bars is to get the left hand to state
+                        the Lebewohl motif both completely and both in the right
+                        key and register by repeating the Lebewohl motif over
+                        and over again for the first 8 bars then rising higher
+                        and higher (and diminishing the note-value of the first
+                        note from whole to quarter) for the next 4 bars. Once
+                        this &ldquo;teaching&rdquo; is complete in bar 234, the
+                        rest of the 21 bars are there to tone-paint: for
+                        example, the 4 bars directly afterward are the
+                        descending horn calls that mark the person&rsquo;s
+                        departure and the 4 bars after that are like the sound
+                        of horses&rsquo; feet (and form the most compressed that
+                        we have seen the Lebewohl theme, now reduced to 2
+                        quarter notes). After that, we see the left hand and
+                        right hand at their furthest apart, with the left hand
+                        playing a falling bass that reminds us of the Lebewohl
+                        motif, and the right hand playing extremely high scales
+                        in counterpoint: while previous points may have been the
+                        climax of drama, this is a significant climax of
+                        sentimentality, and I personally believe that this part,
+                        when rendered well, can always give goosebumps. (Agmon
+                        notes that at this point, we have an exact reversal of
+                        the introduction, with a C-octave in the right hand and
+                        the E-flat and G in the left, but instead of propelling
+                        the piece this fizzles out to a harmless B-octave.
+                        Schiff also notes that on the C-octave, a crescendo is
+                        written, making it impossible for the pianist. Lastly,
+                        Perahia notes that this is also tone-painting, if we
+                        think of it like the carriage of the archduke going on a
+                        hill or faraway mountain then disappearing.) The piece
+                        then ends on two forte staccato chords, perhaps
+                        indicating that the persona is trying to resist falling
+                        away into sentimentality and is resolved to stay happy
+                        even if the other person is leaving.
+                    </p>
+                </section>
+                <section>
+                    <h2 id="conc">Conclusion</h2>
+                    <p>
+                        This piece is, in my opinion, one of the masterworks of
+                        sonata form. It is considered in the pantheon of the
+                        great works of Beethoven&rsquo;s middle period: it ranks
+                        equal to the Waldstein Sonata and the Appassionata
+                        Sonata in this regard.
+                    </p>
+                    <p>
+                        It is also the last idiomatically middle-period sonata
+                        of Beethoven. It was 5 years before he published another
+                        sonata, in 1815: this work is significantly different
+                        from his other works but it is unclear whether it
+                        belongs to the middle period or the late period, with
+                        Rosen, for example, placing it in neither. Indeed, this
+                        first movement may have just been saying farewell for a
+                        coming return: but somehow, it also marked farewell to
+                        the conventions of Sonata Form as we know it, and
+                        further forward we will now be seeing fugues, themes and
+                        variations, and sonatas with unclear themes and
+                        transitions. Beethoven&rsquo;s music here becomes so
+                        different and so unique that even today, we have about
+                        as much difficulty parsing it as the people of
+                        Beethoven&rsquo;s day did.
+                    </p>
+                    <p>
+                        But still, this sonata is open to read. And indeed, its
+                        use of tone-painting, however reluctant in some cases,
+                        foretells the use of tone-painting by other composers:
+                        it most clearly leads directly to the tone-painting of
+                        Schumann and Grieg. And the sonata&rsquo;s virtuosity
+                        still makes it a favorite for travelling pianists, which
+                        no doubt further adds to its popularity. Thank you for
+                        reading!
+                    </p>
+                </section>
+                <section>
+                    <h2 id="ref">References</h2>
+                    <ul>
+                        <li>
+                            Agmon, E. (1996). Beethoven&rsquo;s Op. 81a and the
+                            Psychology of Loss. Music Theory Online, 2(4).
+                        </li>
+                        <li>
+                            Biss, J. (n.d.). Formal Experimentation and Musical
+                            Storytelling: Op. 81a. Coursera. Retrieved February
+                            5, 2022, from
+                            <a
+                                href="https://www.google.com/url?q=https://www.coursera.org/lecture/beethoven-piano-sonatas/formal-experimentation-and-musical-storytelling-op-81a-NEOjH&amp;sa=D&amp;source=editors&amp;ust=1644198560537742&amp;usg=AOvVaw2pJpwbNXEDD6xK1FHoXYxS"
+                                >https://www.coursera.org/lecture/beethoven-piano-sonatas/formal-experimentation-and-musical-storytelling-op-81a-NEOjH</a
+                            >
+                        </li>
+                        <li>
+                            Gertsch, N., &amp; Perahia, M. (2019). Klaviersonate
+                            Nr. 26 Es-dur op. 81a (Les Adieux). Revidierte
+                            Ausgabe von HN 723. G. Henle Verlag.
+                        </li>
+                        <li>
+                            Kumar, A. X. (2017, March 5). Beethoven: Sonata
+                            No.26 in E-flat Major, &ldquo;Les Adieux&rdquo;
+                            (Oppitz, Lortie) [Video]. YouTube.
+                            <a
+                                href="https://www.google.com/url?q=https://www.youtube.com/watch?v%3DnAapbue97JE&amp;sa=D&amp;source=editors&amp;ust=1644198560538206&amp;usg=AOvVaw2FaYACcbM0_yfTlSdh-_9L"
+                                >https://www.youtube.com/watch?v=nAapbue97JE</a
+                            >
+                        </li>
+                        <li>
+                            Kyburz, R. (2021, April 4). Beethoven: Piano Sonata
+                            No.26 in E&#9837; major, op.81a, &laquo;Les
+                            Adieux&raquo;. Rolf&rsquo;s Music Blog.
+                            <a
+                                href="https://www.google.com/url?q=https://www.rolf-musicblog.net/beethoven-piano-sonata-no-26-op-81a-les-adieux/&amp;sa=D&amp;source=editors&amp;ust=1644198560538640&amp;usg=AOvVaw1HwquJ3p4L-VCDj9G5R6mG"
+                                >https://www.rolf-musicblog.net/beethoven-piano-sonata-no-26-op-81a-les-adieux/</a
+                            >
+                        </li>
+                        <li>
+                            Schiff, A. (2004). Andr&aacute;s Schiff Beethoven
+                            Lecture-Recitals. Wigmore Hall. Retrieved December
+                            17, 2021, from
+                            <a
+                                href="https://www.google.com/url?q=https://wigmore-hall.org.uk/podcasts/andras-schiff-beethoven-lecture-recitals&amp;sa=D&amp;source=editors&amp;ust=1644198560539038&amp;usg=AOvVaw1iKjyyUYlus9roojJIc3GU"
+                                >https://wigmore-hall.org.uk/podcasts/andras-schiff-beethoven-lecture-recitals</a
+                            >
+                        </li>
+                        <li>
+                            Tonic Chord. (2018, May 17). Beethoven: Piano Sonata
+                            No.26 in Eb Major Analysis.
+                            <a
+                                href="https://www.google.com/url?q=https://tonic-chord.com/beethoven-piano-sonata-no-26-in-eb-major-analysis/&amp;sa=D&amp;source=editors&amp;ust=1644198560539413&amp;usg=AOvVaw1MlN5JCstV0jS9EuH8whEv"
+                                >https://tonic-chord.com/beethoven-piano-sonata-no-26-in-eb-major-analysis/</a
+                            >
+                        </li>
+                        <li>
+                            Vega, J. (2020, December 9). Beethoven&rsquo;s Piano
+                            Sonata No. 26 in Eb Major, Op. 81a: Les Adieux
+                            (goodbyes). Foundation For The Revival of Classical
+                            Culture.
+                            <a
+                                href="https://www.google.com/url?q=https://www.ffrcc.org/daily-dose-of-beethoven/2020/12/4/beethovens-piano-sonata-no-26-in-eb-major-op-81a-les-adieux-goodbyes&amp;sa=D&amp;source=editors&amp;ust=1644198560539827&amp;usg=AOvVaw1ZWn2XFWQL8qUHEADvcvIe"
+                                >https://www.ffrcc.org/daily-dose-of-beethoven/2020/12/4/beethovens-piano-sonata-no-26-in-eb-major-op-81a-les-adieux-goodbyes</a
+                            >
+                        </li>
+                        <li>
+                            Wikipedia contributors. (n.d.). Piano Sonata No. 26
+                            (Beethoven). Wikipedia. Retrieved February 5, 2022,
+                            from
+                            <a
+                                href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Piano_Sonata_No._26_(Beethoven)&amp;sa=D&amp;source=editors&amp;ust=1644198560540218&amp;usg=AOvVaw2fmnuuzeaOUMjm186q7Zgs"
+                                >https://en.wikipedia.org/wiki/Piano_Sonata_No._26_(Beethoven)</a
+                            >
+                        </li>
+                    </ul>
+                </section>
+                <footer>
+                    <!-- need the div to have a background and to venter text right -->
+                    <div id="footer_center">
+                        <h3>Beethoven's Genius, Manifest</h3>
+                        <img src="../images/cc-by.svg" alt="cc-by" />
+                        <address>
+                            Please feel free to notify the author of errors,
+                            whether in content or in code. <br />
+                            You may contact the author via email at
+                            <a href="mailto:rexreventar@gmail.com"
+                                >rexreventar@gmail.com</a
+                            >. <br />
+                            This website is licensed under
+                            <a
+                                href="https://creativecommons.org/licenses/by/4.0/"
+                                target="”_blank”"
+                                rel="noopener noreferrer"
+                                >Creative Commons Attribution 4.0 License</a
+                            >. <br />
+                            Essentially, please cite my work if you're going to
+                            use it. Thank you!
+                        </address>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>

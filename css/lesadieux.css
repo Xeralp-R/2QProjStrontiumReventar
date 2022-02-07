@@ -1,0 +1,36 @@
+:root {
+    --transition-time: 0.5s;
+
+    --nav-bg-col: #333333;
+    --nav-text-col: #ffffff;
+
+    --header-bg-col: #000000cc;
+    --header-text-col: #ffffff;
+
+    --main-bg-col: #ffffff; /*fffdd1ee, if necessary*/
+    --main-tex-col: #000000;
+
+    --aside-bg-col: #b87333;
+    --aside-header-col: #a9692f;
+    --aside-hover-col: #99602a;
+    --aside-active-col: #8a5626;
+
+    --aside-h4-col: #ffffff;
+    --aside-l1-col: #eeeeee;
+    --aside-l2-col: #bcbcbc;
+
+    --footer-bg-col: #dcdcdc;
+    --footer-fg-col: #000000;
+}
+
+header {
+    background-image: url(../images/theater.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: scroll;
+}
+
+aside a {
+    font-weight: 350;
+}
